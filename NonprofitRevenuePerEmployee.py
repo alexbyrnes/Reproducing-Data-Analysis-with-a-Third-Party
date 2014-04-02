@@ -25,7 +25,7 @@ df = pd.read_table(f, index_col='EIN', delimiter=' ', usecols=['EIN', 'political
 df = df[(df.noemplyeesw3cnt != 0)]
 
 # Calculate revenue per employee.
-df['revpercap'] = df['totrevenue'] / df['noemplyeesw3cnt'] 
+df['revpercap'] = df['totrevenue'] / df['noemplyeesw3cnt']
 
 # Get the mean of revenue per employee for organizations
 # reporting political activity and the mean for organizations 
@@ -46,7 +46,6 @@ print 'Sanity check:\n\nnonpoliticalMean: %s \npoliticalMean: %s \ndelta: %s \np
 sampleDeltas = []
 
 for x in range(1000):
-    
     pSizedSample = random.sample(df.index, pcount)
     nSizedSample = random.sample(df.index, ncount)
     pSampleMean = df.ix[pSizedSample].revpercap.mean()
