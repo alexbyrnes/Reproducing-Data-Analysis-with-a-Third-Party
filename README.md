@@ -1,4 +1,4 @@
-### Reproducible Data Analysis: Political Nonprofits
+### Reproducible Data Analysis
 
 [![Build Status](https://travis-ci.org/alexbyrnes/Reproducibility-by-Third-Party_Political-Orgs.png)](https://travis-ci.org/alexbyrnes/Reproducibility-by-Third-Party_Political-Orgs)
 
