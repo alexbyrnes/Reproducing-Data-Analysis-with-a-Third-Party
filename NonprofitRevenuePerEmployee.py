@@ -45,7 +45,7 @@ print 'Sanity check:\n\nnonpoliticalMean: %s \npoliticalMean: %s \ndelta: %s \np
 
 sampleDeltas = []
 
-for x in range(1000):
+for x in range(100):
     pSizedSample = random.sample(df.index, pcount)
     nSizedSample = random.sample(df.index, ncount)
     pSampleMean = df.ix[pSizedSample].revpercap.mean()
