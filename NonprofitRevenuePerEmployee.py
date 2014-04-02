@@ -9,6 +9,7 @@ from zipfile import ZipFile
 
 # Download Annual Extract of Tax-Exempt Organization Financial Data for 2013 from the IRS.
 # http://www.irs.gov/uac/SOI-Tax-Stats-Annual-Extract-of-Tax-Exempt-Organization-Financial-Data
+
 request = urllib2.Request('http://www.irs.gov/file_source/pub/irs-soi/13eofinextract990.zip')
 request.add_header('Accept-encoding', 'zip')
 response = urllib2.urlopen(request)
